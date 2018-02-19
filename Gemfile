@@ -5,7 +5,7 @@ ruby '2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use pgsql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 #
 gem 'haml'
-gem 'pg'
 gem 'pg_search'
 gem 'chartkick'
 gem 'groupdate'
@@ -43,6 +42,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-byebug'
   gem 'faker'
+  gem 'countries'
 end
 
 group :development do
