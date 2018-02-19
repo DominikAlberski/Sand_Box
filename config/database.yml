@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sand_box_development
+  pool: 5
+  socket: /var/run/postgresql
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sand_box_test
+  pool: 5
+  socket: /var/run/postgresql
