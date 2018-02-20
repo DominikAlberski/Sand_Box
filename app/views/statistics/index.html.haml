@@ -1,0 +1,19 @@
+= column_chart Sporter.group(:age).count, xtitle: "Age", ytitle: "number of sporters"
+
+= sporters_by_age(Sporter)
+
+= sporters_by_age_async
+
+= bar_chart @sporters_in_country, height: '50vw'
+
+= column_chart @result_by_country, legend: false, stacked: true
+
+= line_chart CompetitionResult.group_by_year(:created_at, format: '%Y').count
+
+= pie_chart Competition.group(:title).count
+
+= column_chart @competitions_in_country, legend: false, stacked: true, colors: @color
+
+= competitions_chart(@competitions_in_country)
+
+= language_time_chart
